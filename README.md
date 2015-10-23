@@ -1,5 +1,5 @@
 # About
-This project provides the abilty to establish MQTT connections and to perform MQTT communication.
+This project provides the abilty to establish MQTT connections and to perform MQTT communication using Qt.
 This library consists of two parts:
 
  - Qt/C++ Library
