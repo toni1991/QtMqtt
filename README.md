@@ -37,23 +37,24 @@ Caution: The installation with 'make install' is only tested under GNU/Linux and
 
 ## Example usage
 
-    #include "qmqtt.h"
+```C++
+#include "qmqtt.h"
 
-    [...]
+[...]
 
-    QMQTT::Client client("localhost", 1883);
-    m_client->setClientId(m_clientId);
-    QObject::connect(client, &QMQTT::Client::received, this, messageReceived);
-    m_client->connect();
+QMQTT::Client client("localhost", 1883);
+m_client->setClientId(m_clientId);
+QObject::connect(client, &QMQTT::Client::received, this, messageReceived);
+m_client->connect();
 
-    [...]
+[...]
 
-    void QmlQmqtt::messageReceivedSlot(const QMQTT::Message &message)
-    {
-        qDebug() << "Topic: " << arg.topic();
-        qDebug() << "Payload: " << arg.payload();
-    }
-
+void QmlQmqtt::messageReceivedSlot(const QMQTT::Message &message)
+{
+    qDebug() << "Topic: " << arg.topic();
+    qDebug() << "Payload: " << arg.payload();
+}
+```
 
 
 ## Signals
@@ -81,18 +82,20 @@ Caution: The installation with 'make install' is only tested under GNU/Linux and
 # QML Plugin
 ## Example usage
 
-    import QmlQmqtt 1.0
-    QmlQmqtt{
-        id: qmlqmqtt
-        host: "localhost"
-        port: 1883
-        onConnected: qmlqmqtt.subscribe("#")
-        onMessageReceived: {
-            console.log("topic:",topic)
-            console.log("payload:",payload)
-        }
-        Component.onCompleted: qmlqmqtt.connect()
+```QML
+import QmlQmqtt 1.0
+QmlQmqtt{
+    id: qmlqmqtt
+    host: "localhost"
+    port: 1883
+    onConnected: qmlqmqtt.subscribe("#")
+    onMessageReceived: {
+        console.log("topic:",topic)
+        console.log("payload:",payload)
     }
+    Component.onCompleted: qmlqmqtt.connect()
+}
+```
 
 ## Properties
 - bool autoReconnect
