@@ -8,13 +8,21 @@ This library consists of two parts:
 ## Credits
 For the most part it's a "merge" of the work of the people mentioned below, marely refactored for the sake of readability and to fit particular needs.
 
-Special thanks to the owners of the used repositories:
- - @MacroBull (https://github.com/MacroBull/qml-qmqtt)
- - @ndesai (https://github.com/ndesai/qml-qmqtt)
- - @erylee (https://github.com/emqtt/qmqtt)
- - @tipih (https://github.com/tipih/qtModeratorDemo)
+Special thanks to the owners of the used repositories and contributors:
 
-There are much more contributors which aren't less important! Please refer to the licence headers in each file for detailed information about authors.
+ - [@MacroBull] (https://github.com/MacroBull)
+ - [@ndesai] (https://github.com/ndesai)
+ - [@erylee] (https://github.com/erylee)
+ - [@tipih] (https://github.com/tipih)
+ - [@Kampfgnom] (https://github.com/Kampfgnom)
+ - [@wuming123057](https://github.com/wuming123057)
+
+There are much more contributors which aren't less important! Please refer to the licence headers in each file and the repositories below for detailed information about authors.
+
+Sourcecode taken from:
+ - [qmqtt] (https://github.com/emqtt/qmqtt)
+ - [qml-qmqtt] (https://github.com/MacroBull/qml-qmqtt)
+ - [qtModeratorDemo] (https://github.com/tipih/qtModeratorDemo)
 
 ## Compatibility
 This library has been compiled and tested on:
