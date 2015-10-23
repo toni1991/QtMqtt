@@ -23,7 +23,7 @@ This library has been compiled and tested on:
  - Windows 7 x64 - Qt 5.5.1
 
 # Build
-    git clone
+    git clone https://github.com/toni1991/QtMqtt.git
     cd QtMqtt
     mkdir build
     cd build
