@@ -8,6 +8,7 @@ This library consists of two parts:
 ## Credits
 For the most part it's a "merge" of the work of the people mentioned below, marely refactored for the sake of readability and to fit particular needs.
 
+Special thanks to the owners of the used repositories:
  - @MacroBull (https://github.com/MacroBull/qml-qmqtt)
  - @ndesai (https://github.com/ndesai/qml-qmqtt)
  - @erylee (https://github.com/emqtt/qmqtt)
