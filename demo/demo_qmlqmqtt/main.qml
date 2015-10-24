@@ -42,6 +42,13 @@ ApplicationWindow {
                     "Unsubscribed. Topic: " +
                     topic
         }
+        onError: {
+            textArea.text = textArea.text +
+                    "\n" +
+                    "Error (" +
+                    error +
+                    ")..."
+        }
     }
 
     TabView{
