@@ -58,7 +58,7 @@ ApplicationWindow {
                 }
                 TextField{
                     id: connectionHost
-                    text: "192.168.1.119"
+                    text: "localhost"
                 }
                 Text{
                     text: "Port"

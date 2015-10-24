@@ -35,11 +35,15 @@ unix {
     INSTALLS += target qmldir
 }
 
-
-unix|win32: LIBS += -L$$OUT_PWD/../qmqtt/ -lqmqtt
-
 INCLUDEPATH += $$PWD/../qmqtt/include
 DEPENDPATH += $$PWD/../qmqtt
 
-win32:!win32-g++: PRE_TARGETDEPS += $$OUT_PWD/../qmqtt/qmqtt.lib
-else:unix|win32-g++: PRE_TARGETDEPS += $$OUT_PWD/../qmqtt/libqmqtt.a
+win32:CONFIG(release, debug|release): LIBS += -L$$OUT_PWD/../qmqtt/release/ -lqmqtt
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$OUT_PWD/../qmqtt/debug/ -lqmqtt
+else:unix: LIBS += -L$$OUT_PWD/../qmqtt/ -lqmqtt
+
+win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$OUT_PWD/../qmqtt/release/libqmqtt.a
+else:win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$OUT_PWD/../qmqtt/debug/libqmqtt.a
+else:win32:!win32-g++:CONFIG(release, debug|release): PRE_TARGETDEPS += $$OUT_PWD/../qmqtt/release/qmqtt.lib
+else:win32:!win32-g++:CONFIG(debug, debug|release): PRE_TARGETDEPS += $$OUT_PWD/../qmqtt/debug/qmqtt.lib
+else:unix: PRE_TARGETDEPS += $$OUT_PWD/../qmqtt/libqmqtt.a
