@@ -58,12 +58,12 @@ Under windows it's neccessary to copy the compiled files listed below to the dir
 
 QMQTT::Client client("localhost", 1883);
 m_client->setClientId(m_clientId);
-QObject::connect(client, &QMQTT::Client::received, this, messageReceived);
+QObject::connect(client, &QMQTT::Client::received, this, &messageReceived);
 m_client->connect();
 
 [...]
 
-void QmlQmqtt::messageReceivedSlot(const QMQTT::Message &message)
+void QmlQmqtt::messageReceived(const QMQTT::Message &message)
 {
     qDebug() << "Topic: " << arg.topic();
     qDebug() << "Payload: " << arg.payload();
