@@ -38,7 +38,7 @@ This library has been compiled and tested on:
     make
     make install
 
-Caution: The installation with 'make install' is only tested under GNU/Linux and may not work on other OS/target!
+Caution: The installation with 'make install' is not fully tested but should work!
 
 Under windows it's neccessary to copy the compiled files listed below to the directory ".../Qt/...qml/QmlQmqtt".
  - libQmlQmqtt.a

@@ -5,4 +5,6 @@ SUBDIRS += \
     qmlqmqtt \
     demo
 
+CONFIG += ordered
+
 OTHER_FILES += README.md
