@@ -40,12 +40,14 @@ This library has been compiled and tested on:
 
 Caution: The installation with 'make install' is not fully tested but should work!
 
+<!---
 Under windows it's neccessary to copy the compiled files listed below to the directory ".../Qt/...qml/QmlQmqtt".
  - libQmlQmqtt.a
  - libQmlQmqttd.a
  - qmldir
  - QmlQmqtt.dll
  - QmlQmqttd.dll
+-->
 
 # Qt/C++
 
