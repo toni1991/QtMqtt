@@ -40,6 +40,9 @@ This library has been compiled and tested on:
 
 Caution: The installation with 'make install' is not fully tested but should work!
 
+# Mac
+    Tested make install on Mac library installed in /usr/local/lib and header files in /usr/local/include/qmqtt
+
 <!---
 Under windows it's neccessary to copy the compiled files listed below to the directory ".../Qt/...qml/QmlQmqtt".
  - libQmlQmqtt.a

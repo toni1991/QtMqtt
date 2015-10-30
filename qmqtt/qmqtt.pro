@@ -34,3 +34,12 @@ unix:!android {
 
     INSTALLS += target headers
 }
+
+mac{
+    target.path = /usr/local/lib
+
+    headers.files = $${HEADERS}
+    headers.path = /usr/local/include/$${TARGET}
+
+    INSTALLS += target headers
+}
