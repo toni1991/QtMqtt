@@ -50,10 +50,10 @@ public:
 
     // Publish methods
     Q_INVOKABLE quint16 publishMessageObject(QMQTT::Message &message) const;
-    Q_INVOKABLE quint16 publish(const QString& topic, const QString& payload, quint8 qos = 0) const;
+    Q_INVOKABLE quint16 publish(const QString& topic, const QString& payload, int qos = 0) const;
 
     // Subscription methods
-    Q_INVOKABLE quint16 subscribe(const QString& topic, quint8 qos = 0) const;
+    Q_INVOKABLE quint16 subscribe(const QString& topic, int qos = 0) const;
     Q_INVOKABLE void unsubscribe(const QString& topic) const;
 
 signals:

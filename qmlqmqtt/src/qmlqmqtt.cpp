@@ -172,7 +172,7 @@ quint16 QmlQmqtt::publishMessageObject(QMQTT::Message &message) const {
     return 0;
 }
 
-quint16 QmlQmqtt::publish(const QString& topic, const QString& payload, quint8 qos) const {
+quint16 QmlQmqtt::publish(const QString& topic, const QString& payload, int qos) const {
     QMQTT::Message message;
     message.setTopic(topic);
     message.setPayload(payload.toUtf8());
@@ -181,7 +181,7 @@ quint16 QmlQmqtt::publish(const QString& topic, const QString& payload, quint8 q
 }
 
 // Subscription methods
-quint16 QmlQmqtt::subscribe(const QString& topic, quint8 qos)  const{
+quint16 QmlQmqtt::subscribe(const QString& topic, int qos)  const{
     if(clientAvailableAndConnected())
     {
         return m_client->subscribe(topic, qos);
