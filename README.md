@@ -1,3 +1,5 @@
+# THIS PROJECT IS DISCONTINUED! FEEL FREE TO FORK AND WORK ON ;)
+
 # About
 This project provides the abilty to establish MQTT connections and to perform MQTT communication using Qt.
 This library consists of two parts:
