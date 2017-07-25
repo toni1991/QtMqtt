@@ -12,11 +12,11 @@ For the most part it's a "merge" of the work of the people mentioned below, mare
 
 Special thanks to the owners of the used repositories and contributors:
 
- - [@MacroBull] (https://github.com/MacroBull)
- - [@ndesai] (https://github.com/ndesai)
- - [@erylee] (https://github.com/erylee)
- - [@tipih] (https://github.com/tipih)
- - [@Kampfgnom] (https://github.com/Kampfgnom)
+ - [@MacroBull](https://github.com/MacroBull)
+ - [@ndesai](https://github.com/ndesai)
+ - [@erylee](https://github.com/erylee)
+ - [@tipih](https://github.com/tipih)
+ - [@Kampfgnom](https://github.com/Kampfgnom)
  - [@wuming123057](https://github.com/wuming123057)
 
 There are much more contributors which aren't less important! Please refer to the licence headers in each file and the repositories below for detailed information about authors.
